@@ -1,0 +1,32 @@
+.hero-card{
+    display:flex;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.content-info{
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    transform: translateY(100%);
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    align-self: center;
+    transition: all 0.3s linear;
+    color: #fff;
+}
+
+.hero-card:hover .content-info{
+    transform: translateY(-100%);
+    
+}
+
+.hero-link{
+    color: white;
+    
+}
+.hero-link:hover{
+    color: rgb(240, 49, 49);
+    
+}
