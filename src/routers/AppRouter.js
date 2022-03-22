@@ -11,14 +11,14 @@ return(
       <Routes>
         {/* <Route path="login" element={<LoginScreen/>} /> */}
 
-        <Route path = "/login" element = {
+        <Route path = "./login" element = {
             <PublicRoute>
                 <LoginScreen/>
             </PublicRoute>
         } />
         {/* rutas privadas debemos remplazar por este higher order component*/}
         
-        <Route path= "/*" element = {
+        <Route path= "./*" element = {
             <PrivateRoute>
                 <DashboardRoutes/>
             </PrivateRoute>
