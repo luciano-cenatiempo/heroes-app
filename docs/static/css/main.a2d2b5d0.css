@@ -1,0 +1,2 @@
+.hero-card{display:flex;overflow:hidden;position:relative}.content-info{align-self:center;background:rgba(0,0,0,.7);bottom:0;color:#fff;left:0;position:absolute;-webkit-transform:translateY(100%);transform:translateY(100%);transition:all .3s linear;width:100%}.hero-card:hover .content-info{-webkit-transform:translateY(-100%);transform:translateY(-100%)}.hero-link{color:#fff}.hero-link:hover{color:#f03131}
+/*# sourceMappingURL=main.a2d2b5d0.css.map*/
