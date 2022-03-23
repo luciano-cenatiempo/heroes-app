@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getHeroById } from '../../selectors/getHeroById';
 
-const heroImages = require.context('../../../assets',true) // esto es propio de webpack, ponemos el true para que busque en subdirectorios. 
+const heroImages = require.context('./assets',true) // esto es propio de webpack, ponemos el true para que busque en subdirectorios. 
 
 export const HeroScreen = () => {
 
