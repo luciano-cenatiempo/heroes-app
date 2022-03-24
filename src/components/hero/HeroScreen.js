@@ -25,7 +25,7 @@ export const HeroScreen = () => {
         return <Navigate to ='/'/> // este componente navigate hay que importarlo de react-router-dom porque necesitamos devolver un componente si o si. aca no se puede usar useNavigate()
     }
 
-    const imagePath = `../../assets/${id}.jpg`
+    const imagePath = `./../assets/${id}.jpg`
 
     const handleReturn = () =>{
 
