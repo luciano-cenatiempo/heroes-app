@@ -31,6 +31,7 @@ export const HeroScreen = () => {
 
         navigate( -1 ); // con el -1 volvemos atrás a la pagina
     }
+    console.log('actualizado')
     return (
         <div className='row mt-5'>
             <div className='col-8 col-sm-7 col-md-4 mx-auto'>
