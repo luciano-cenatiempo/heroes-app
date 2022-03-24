@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getHeroById } from '../../selectors/getHeroById';
 
-// const heroImages = require.context('./assets',true) // esto es propio de webpack, ponemos el true para que busque en subdirectorios. 
-
+// esto es propio de webpack, ponemos el true para que busque en subdirectorios. 
+const heroesImages = require.context('../../assets',true);
 export const HeroScreen = () => {
 
     const {heroId} = useParams() // con esto que importamos de react-router-dom manejamos los parametros de las rutas
@@ -25,7 +25,7 @@ export const HeroScreen = () => {
         return <Navigate to ='/'/> // este componente navigate hay que importarlo de react-router-dom porque necesitamos devolver un componente si o si. aca no se puede usar useNavigate()
     }
 
-    const imagePath = `./../assets/${id}.jpg`
+    // const imagePath = `./../assets/${id}.jpg`
 
     const handleReturn = () =>{
 
@@ -36,7 +36,7 @@ export const HeroScreen = () => {
         <div className='row mt-5'>
             <div className='col-8 col-sm-7 col-md-4 mx-auto'>
                 <img 
-                    src={imagePath}
+                    src={heroesImages(`./${id}.jpg`)} 
                     alt = {superhero}
                     className='img-thumbnail animate__animated animate__fadeInLeft'
                 />
