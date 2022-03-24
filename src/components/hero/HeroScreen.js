@@ -3,7 +3,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getHeroById } from '../../selectors/getHeroById';
 
 // esto es propio de webpack, ponemos el true para que busque en subdirectorios. 
-const heroesImages = require.context('../../assets',true);
+const heroesImages = require.context('../../../assets',true);
 export const HeroScreen = () => {
 
     const {heroId} = useParams() // con esto que importamos de react-router-dom manejamos los parametros de las rutas
